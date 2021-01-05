@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Vanilla JS Project</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,800&display=swap">
+</head>
+<body>
+
+    <!-- Start Settings Box -->
+    <div class="settings-box">
+        <div class="settings-icon text-center">
+            <i class="fas fa-cog fa-lg settings-gear"></i>
+        </div>
+        <div class="settings-container">
+            <div class="options-box">
+                <h4 class="text-cap">choose your color</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color="#17bdc9"></li>
+                    <li data-color="#009688"></li>
+                    <li data-color="#FF5722"></li>
+                    <li data-color="#F44336"></li>
+                    <li data-color="#673AB7"></li>
+                </ul>
+            </div> <!-- /.Option Box -->
+
+            <div class="options-box random-background">
+                <h4 class="text-cap">random backgrounds</h4>
+                <span class="yes text-cap active" data-background="yes">yes</span>
+                <span class="no text-cap" data-background="no">no</span>
+            </div> <!-- /.Option Box -->
+
+            <div class="options-box bullets-option">
+                <h4 class="text-cap">navigation bullets</h4>
+                <span class="yes text-cap active" data-display="show">show</span>
+                <span class="no text-cap" data-display="hide">hide</span>
+            </div> <!-- /.Option Box -->
+
+            <button class="text-cap reset-button">reset options</button>
+        </div>
+    </div>
+    <!-- End Settings Box -->
+
+    <!-- Start Nav Bullets -->
+    <div class="nav-bullets">
+        <div class="nav-bullet" data-section=".about-us">
+            <div class="tooltip">About Us</div>
+        </div>
+        <div class="nav-bullet" data-section=".features">
+            <div class="tooltip">Features</div>
+        </div>
+        <div class="nav-bullet" data-section=".timeline">
+            <div class="tooltip">Timeline</div>
+        </div>
+        <div class="nav-bullet" data-section=".gallery">
+            <div class="tooltip">Gallery</div>
+        </div>
+        <div class="nav-bullet" data-section=".testimonials">
+            <div class="tooltip">Testimonials</div>
+        </div>
+    </div>
+    <!-- End Nav Bullets -->
+
+    <!-- Start Landing Page -->
+    <section class="landing-page">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="header-area headroom">
+                <div class="logo"><span>Sitesauce</span></div>
+                <div class="links-container">
+                    <div class="links text-cap">
+                        <ul class="menu-links">
+                            <li><a href="#" data-section=".about-us">About us</a></li>
+                            <li><a href="#" data-section=".features">Features</a></li>
+                            <li><a href="#" data-section=".gallery">Gallery</a></li>
+                            <li><a href="#" data-section=".timeline">Timeline</a></li>
+                            <li><a href="#" data-section=".testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <button class="toggle-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="intro-text text-center">
+            <h1 class="text-upper">a <span>static version</span> of your website in one click</h1>
+            <p class="text-cap">suisauce convert dynamic websites (like joomla!-powered websites) into static sites, and keeps content in syc</p>
+            <button class="text-cap">start your 7-day trial</button>
+        </div>
+    </section>
+    <!-- End Landing Page -->
+
+    <!-- Start about us section -->
+    <section class="about-us">
+        <div class="container">
+            <div class="info-box">
+                <h2 class="text-cap">about us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium qui necessitatibus doloremque cupiditate fuga ipsa, modi similique repellendus ab perferendis velit soluta iure tempore corporis repellat dolor alias. In vel quibusdam a aspernatur libero dolore expedita placeat consectetur reprehenderit labore dignissimos aliquid iste quam dolor harum, sequi delectus. Voluptas laborum eum atque eius voluptatum a natus vitae dolorem iure ad, et quae, inventore cumque repudiandae molestiae beatae adipisci cupiditate id?</p>
+            </div> <!-- /.Info-Box -->
+
+            <div class="img-box">
+                <img src="images/about-us.jpg" alt="about-us" width="640px" height="426px">
+            </div>
+        </div> <!-- /.Container -->
+    </section>
+    <!-- End about us section -->
+
+    <!-- Start Features section -->
+    <section class="features text-center">
+        <div class="container">
+            <div class="info-box">
+                <h2 class="text-cap">what's in for me?</h2>
+                <p>Enjoy all the benefints static sites provide while keeping everything good about the backend</p>
+            </div>
+            <!-- Start Feats box -->
+            <div class="feats-box">
+                <div class="feat">
+                    <i class="fas fa-wallet fa-4x"></i>
+                    <h3 class="text-cap">minimal costs</h3>
+                    <p>Sitesauce hosts your static sites on Vercel (formerly ZEIT). offerng unlimited bandwidth and their world-class CDN for no additional cost</p>
+                </div>
+
+                <div class="feat">
+                    <i class="fas fa-bolt fa-4x"></i>
+                    <h3 class="text-cap">Blazing-fast load times</h3>
+                    <p>Executing expensive operations on build and serving your sites through Vercel's world-class CDN results in semi-instantaneous page loads</p>
+                </div>
+
+                <div class="feat">
+                    <i class="fas fa-hdd fa-4x"></i>
+                    <h3 class="text-cap">infinte scaling</h3>
+                    <p>With guaranteed zero-donwtime and edge regions around the world, a thousand concurrent visits load as fast as a single one.</p>
+                </div>
+            </div> <!-- /. Feats Box -->
+        </div>
+    </section>
+    <!-- End Features section -->
+
+    <!-- Start Skills section -->
+    <section class="skills">
+        <div class="container">
+            <div class="info-box text-center">
+                <h2 class="text-cap">other skills the team master</h2>
+                <p>our team can help you with other skills needed to build your website from scratch, using the latest technology</p>
+            </div>
+            <div class="skill-container">
+                <div class="skill-name text-upper">html</div>
+                <div class="skill-progress">
+                    <span class="html" data-progress="85%"></span>
+                </div>
+            </div> <!-- Skills Container -->
+
+            <div class="skill-container">
+                <div class="skill-name text-upper">css</div>
+                <div class="skill-progress">
+                    <span class="css" data-progress="80%"></span>
+                </div>
+            </div> <!-- Skills Container -->
+
+            <div class="skill-container">
+                <div class="skill-name text-upper">javascript</div>
+                <div class="skill-progress">
+                    <span class="javascript" data-progress="90%"></span>
+                </div>
+            </div> <!-- Skills Container -->
+
+            <div class="skill-container">
+                <div class="skill-name text-upper">php</div>
+                <div class="skill-progress">
+                    <span class="php" data-progress="75%"></span>
+                </div>
+            </div> <!-- Skills Container -->
+
+            <div class="skill-container">
+                <div class="skill-name text-upper">mysql</div>
+                <div class="skill-progress">
+                    <span class="wordpress" data-progress="80%"></span>
+                </div>
+            </div> <!-- Skills Container -->
+        </div>
+        
+    </section>
+    <!-- End Skills section -->
+
+    <!-- Start Gallery section -->
+    <section class="gallery text-center">
+        <div class="container">
+            <h2 class="text-cap">our gallery</h2>
+            <div class="images-box">
+                <img src="images/gallery/01.jpg" alt="Image One">
+                <img src="images/gallery/02.jpg" alt="Image Two">
+                <img src="images/gallery/03.jpg" alt="Image Three">
+                <img src="images/gallery/04.jpg" alt="Image Four">
+                <img src="images/gallery/05.jpg" alt="Image Five">
+                <img src="images/gallery/06.jpg" alt="">
+                <img src="images/gallery/07.jpg" alt="">
+                <img src="images/gallery/08.jpg" alt="">
+                <img src="images/gallery/09.jpg" alt="">
+                <img src="images/gallery/10.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- End Gallery section -->
+
+    <!-- Start Timeline Section -->
+    <section class="timeline">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="year">2018</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Left Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt maiores perferendis accusantium! Deserunt nobis corporis voluptate, amet illo inventore, sed minus voluptatibus minima dolore repellat maxime veniam sequi unde!</p>
+                    </div>
+                </div> <!-- Left -->
+
+                <div class="clearfix"></div>
+
+                <div class="right">
+                    <div class="content">
+                        <h3>Right Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt maiores perferendis accusantium! Deserunt nobis corporis voluptate, amet illo inventore, sed minus voluptatibus minima dolore repellat maxime veniam sequi unde!</p>
+                    </div>
+                </div> <!-- Right -->
+
+                <div class="clearfix"></div>
+
+                <div class="year">2020</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Left Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt maiores perferendis accusantium! Deserunt nobis corporis voluptate, amet illo inventore, sed minus voluptatibus minima dolore repellat maxime veniam sequi unde!</p>
+                    </div>
+                </div> <!-- Left -->
+
+                <div class="clearfix"></div>
+
+                <div class="left">
+                    <div class="content">
+                        <h3>Left Heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt maiores perferendis accusantium! Deserunt nobis corporis voluptate, amet illo inventore, sed minus voluptatibus minima dolore repellat maxime veniam sequi unde!</p>
+                    </div>
+                </div> <!-- Left -->
+            </div>
+        </div>
+    </section>
+    <!-- End Timeline Section -->
+
+    <!-- Start Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="text-cap">testimonials</h2>
+            <div class="testims-content">
+                <div class="testim-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cupiditate minus doloremque voluptates cum nesciunt voluptatibus. Illo voluptas similique explicabo accusamus atque? Nemo, molestias distinctio sit ratione doloribus minus omnis?</p>
+                    <div class="person-info">
+                        <img src="images/Me.jpg" alt="Me">
+                        <h4 class="text-cap">his name</h4>
+                        <span>Company CEO</span>
+                    </div>
+                </div> <!-- /.Testimonial Box -->
+
+                <div class="testim-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cupiditate minus doloremque voluptates cum nesciunt voluptatibus. Illo voluptas similique explicabo accusamus atque? Nemo, molestias distinctio sit ratione doloribus minus omnis?</p>
+                    <div class="person-info">
+                        <img src="images/Me.jpg" alt="Me">
+                        <h4 class="text-cap">his name</h4>
+                        <span>Company CEO</span>
+                    </div>
+                </div> <!-- /.Testimonial Box -->
+
+                <div class="testim-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cupiditate minus doloremque voluptates cum nesciunt voluptatibus. Illo voluptas similique explicabo accusamus atque? Nemo, molestias distinctio sit ratione doloribus minus omnis?</p>
+                    <div class="person-info">
+                        <img src="images/Me.jpg" alt="Me">
+                        <h4 class="text-cap">his name</h4>
+                        <span>Company CEO</span>
+                    </div>
+                </div> <!-- /.Testimonial Box -->
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonials -->
+
+    <!-- Start Contact Us -->
+    <section class="contact text-center">
+        <div class="container">
+            <h2 class="text-cap">contact us</h2>
+            <form action="">
+                <div class="left">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div> <!-- /.Left -->
+
+                <div class="right">
+                    <textarea name="message" placeholder="Your Message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Contact">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End Contact Us -->
+
+    <!-- Start Footer -->
+    <section class="footer text-center">
+        <p class="text-cap">created with <span>❤</span> by hamza chenguiti</p>
+    </section>
+    <!-- End Footer -->
+
+    <script src="js/headroom.js" type="module"></script>
+    <script src="js/master.js" type="module"></script>
+</body>
+</html>
